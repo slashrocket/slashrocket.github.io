@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    
     <head>
         <title>Learn Rails</title>
         <meta charset="utf-8">
@@ -11,7 +11,7 @@
         rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/style.css">
     </head>
-
+    
     <body>
         <div class="cover">
             <div class="navbar navbar-inverse">
@@ -60,8 +60,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="text-center">Slack</h1>
-                        <p class="lead text-center">Request an invite to our community</p>
-                        <p class="text-center"><script async defer src="https://learnrails-slackin.herokuapp.com/slackin.js?large"></script></p>
+                        <p class="lead text-center">Request an invite to our community.</p>
+                        <p class="text-center">
+                            <script async="" defer="" src="https://learnrails-slackin.herokuapp.com/slackin.js?large"></script>
+                        </p>
                     </div>
                 </div>
                 <div class="row">
@@ -81,19 +83,19 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                        <a href="http://redditgraphed.com"><img src="assets/redditgraphed.png" class="img-responsive img-thumbnail"></a>
                         <h3 class="text-center">Redditgraphed</h3>
-                        <p class="text-center">Project Description Here</p>
+                        <p class="text-center">Analysis of Reddit posts</p>
                     </div>
                     <div class="col-md-4">
-                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                        <a href="http://stationstream.space"><img src="assets/stationstream.png" class="img-responsive img-thumbnail"></a>
                         <h3 class="text-center">Stationstream</h3>
-                        <p class="text-center">Project Description Here</p>
+                        <p class="text-center">Real-time tracking of the ISS</p>
                     </div>
                     <div class="col-md-4">
-                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                        <a><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
                         <h3 class="text-center">Upcoming Project</h3>
-                        <p class="text-center">Project Description Here</p>
+                        <p class="text-center">Help us make something great!</p>
                     </div>
                 </div>
                 <div class="row">
@@ -126,34 +128,34 @@
             </div>
         </div>
         <script>
-          $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                  $('html,body').animate({
-                    scrollTop: target.offset().top
-                  }, 1000);
-                  return false;
-                }
-              }
-            });
-          });
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                      $('html,body').animate({
+                        scrollTop: target.offset().top
+                      }, 1000);
+                      return false;
+                    }
+                  }
+                });
+              });
         </script>
         <script>
-          $(document).on('scroll touchmove touchend', function(e) {
-              var offTop = $(document).scrollTop();
+            $(document).on('scroll touchmove touchend', function(e) {
+                  var offTop = $(document).scrollTop();
 
-              $('#hero').find('h1').css({
-                  marginTop: - (offTop * 0.2),
-                  opacity: (100 - (offTop * 0.2)) / 100
+                  $('#hero').find('h1').css({
+                      marginTop: - (offTop * 0.2),
+                      opacity: (100 - (offTop * 0.2)) / 100
+                  });
+                  $('#hero').find('p').css({
+                      marginTop: - (offTop * 0.05),
+                      opacity: (100 - (offTop * 0.2)) / 100
+                  });
               });
-              $('#hero').find('p').css({
-                  marginTop: - (offTop * 0.05),
-                  opacity: (100 - (offTop * 0.2)) / 100
-              });
-          });
         </script>
     </body>
 
