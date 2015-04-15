@@ -44,7 +44,7 @@
             style="background-image : url('assets/bg.jpg')"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center" id="hero">
                         <h1 class="text-inverse">
                             <b>Learn Rails</b>
                         </h1>
@@ -125,6 +125,36 @@
                 </div>
             </div>
         </div>
+        <script>
+          $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+        </script>
+        <script>
+          $(document).on('scroll touchmove touchend', function(e) {
+              var offTop = $(document).scrollTop();
+
+              $('#hero').find('h1').css({
+                  marginTop: - (offTop * 0.2),
+                  opacity: (100 - (offTop * 0.2)) / 100
+              });
+              $('#hero').find('p').css({
+                  marginTop: - (offTop * 0.05),
+                  opacity: (100 - (offTop * 0.2)) / 100
+              });
+          });
+        </script>
     </body>
 
 </html>
