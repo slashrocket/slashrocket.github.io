@@ -1,166 +1,167 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <title>Learn Web Development</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
-        rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/style.css">
-        <link href="assets/icon.png" rel="icon" type="image">
-    </head>
-    
-    <body>
-        <div class="cover">
-            <div class="navbar navbar-inverse">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand"></a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="#section-slack">Slack</a>
-                            </li>
-                            <li class="active">
-                                <a href="#section-projects">Projects</a>
-                            </li>
-                            <li class="active">
-                                <a href="#section-resources">Resources</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="background-image-fixed cover-image img-responsive center-block"
-            style="background-image : url('assets/bg.jpg')"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center" id="hero">
-                        <h1 class="text-inverse">
-                            <b>Learn Web Development</b>
-                        </h1>
-                        <p class="lead text-inverse">
-                            <b>A community focused on learning and discussing web development</b>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section-slack">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center">Slack</h1>
-                        <p class="lead text-center">Request an invite to our community.</p>
-                        <p class="text-center">
-                            <script async="" defer="" src="//learnwebdev-slackin.herokuapp.com/slackin.js?large"></script>
-                        </p>
-                        <h4 class="text-center">Please take a moment and read through our
-                            <a href="https://github.com/learnwebdev/LearnWebDev-Code-Of-Conduct"
-                            target="_blank">Code of Conduct</a>.</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section-projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center">Projects</h1>
-                        <p class="lead text-center">We've built some things.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="http://redditgraphed.com" target="_blank"><img alt="A Picture of the Redditgraphed Web Site" src="assets/redditgraphed.png" class="img-responsive img-thumbnail"></a>
-                        <h3 class="text-center">Redditgraphed</h3>
-                        <p class="text-center">Analysis of Reddit posts</p>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://stationstream.space" target="_blank"><img alt="A Picture of the StationStream Web Site" src="assets/stationstream.png" class="img-responsive img-thumbnail"></a>
-                        <h3 class="text-center">StationStream</h3>
-                        <p class="text-center">Real-time tracking of the ISS</p>
-                    </div>
-                    <div class="col-md-4">
-                        <a><img alt="A Placeholder Image" src="//pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive img-thumbnail"></a>
-                        <h3 class="text-center">Upcoming Project</h3>
-                        <p class="text-center">Help us make something great!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section-resources">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center">Resources</h1>
-                        <p class="lead text-center">Other places to go to learn web development.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="lead list-group">
-                            <a href="https://www.railstutorial.org" target="_blank" class="list-group-item">Ruby on Rails Tutorial by Michael Hartl</a>
-                            <a href="http://railscasts.com" target="_blank" class="list-group-item">RailsCasts - Ruby on Rails Screencasts</a>
-                            <a href="http://www.codecademy.com" target="_blank" class="list-group-item">Codecademy</a>
-                            <a href="http://www.reddit.com/r/rails/" target="_blank" class="list-group-item">Reddit - /r/rails</a>
-                            <a href="https://www.codeschool.com" target="_blank" class="list-group-item">Code School</a>
-                            <a href="https://teamtreehouse.com" target="_blank" class="list-group-item">Treehouse</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                      $('html,body').animate({
-                        scrollTop: target.offset().top
-                      }, 1000);
-                      return false;
-                    }
-                  }
-                });
-              });
-        </script>
-        <script>
-            $(document).on('scroll touchmove touchend', function(e) {
-                  var offTop = $(document).scrollTop();
 
-                  $('#hero').find('h1').css({
-                      marginTop: - (offTop * 0.2),
-                      opacity: (100 - (offTop * 0.2)) / 100
-                  });
-                  $('#hero').find('p').css({
-                      marginTop: - (offTop * 0.05),
-                      opacity: (100 - (offTop * 0.2)) / 100
-                  });
-              });
-        </script>
-    </body>
+  <head>
+    <title>Learn Web Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="assets/icon.png" rel="icon" type="image">
+  </head>
+
+  <body>
+    <div class="cover">
+      <div class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="#section-slack">Slack</a>
+              </li>
+              <li class="active">
+                <a href="#section-projects">Projects</a>
+              </li>
+              <li class="active">
+                <a href="#section-resources">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="background-image-fixed cover-image img-responsive center-block" style="background-image : url('assets/bg.jpg')"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" id="hero">
+            <h1 class="text-inverse">
+              <b>Learn Web Development</b>
+            </h1>
+            <p class="lead text-inverse">
+              <b>A community focused on learning and discussing web development</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section-slack">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Slack</h1>
+            <p class="lead text-center">Request an invite to our community.</p>
+            <p class="text-center">
+              <script async="" defer="" src="//learnwebdev-slackin.herokuapp.com/slackin.js?large"></script>
+            </p>
+            <h4 class="text-center">Please take a moment and read through our
+              <a href="https://github.com/learnwebdev/LearnWebDev-Code-Of-Conduct" target="_blank">Code of Conduct</a>.
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section-projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Projects</h1>
+            <p class="lead text-center">We've built some things.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="http://redditgraphed.com" target="_blank"><img alt="A Picture of the Redditgraphed Web Site" src="assets/redditgraphed.png" class="img-responsive img-thumbnail"></a>
+            <h3 class="text-center">Redditgraphed</h3>
+            <p class="text-center">Analysis of Reddit posts</p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://stationstream.space" target="_blank"><img alt="A Picture of the StationStream Web Site" src="assets/stationstream.png" class="img-responsive img-thumbnail"></a>
+            <h3 class="text-center">StationStream</h3>
+            <p class="text-center">Real-time tracking of the ISS</p>
+          </div>
+          <div class="col-md-4">
+            <a><img alt="A Placeholder Image" src="//pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive img-thumbnail"></a>
+            <h3 class="text-center">Upcoming Project</h3>
+            <p class="text-center">Help us make something great!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section-resources">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Resources</h1>
+            <p class="lead text-center">Other places to go to learn web development.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="lead list-group">
+              <a href="http://javascriptweekly.com" target="_blank" class="list-group-item">JavaScript Weekly</a>
+              <a href="http://html5weekly.com" target="_blank" class="list-group-item">HTML5 Weekly</a>
+              <a href="http://rubyweekly.com" target="_blank" class="list-group-item">Ruby Weekly</a>
+              <a href="https://www.railstutorial.org" target="_blank" class="list-group-item">Ruby on Rails Tutorial by Michael Hartl</a>
+              <a href="http://railscasts.com" target="_blank" class="list-group-item">RailsCasts - Ruby on Rails Screencasts</a>
+              <a href="http://www.codecademy.com" target="_blank" class="list-group-item">Codecademy</a>
+              <a href="http://www.reddit.com/r/rails/" target="_blank" class="list-group-item">Reddit - /r/rails</a>
+              <a href="https://www.codeschool.com" target="_blank" class="list-group-item">Code School</a>
+              <a href="https://teamtreehouse.com" target="_blank" class="list-group-item">Treehouse</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
+    <script>
+      $(document).on('scroll touchmove touchend', function(e) {
+        var offTop = $(document).scrollTop();
+
+        $('#hero').find('h1').css({
+          marginTop: - (offTop * 0.2),
+          opacity: (100 - (offTop * 0.2)) / 100
+        });
+        $('#hero').find('p').css({
+          marginTop: - (offTop * 0.05),
+          opacity: (100 - (offTop * 0.2)) / 100
+        });
+      });
+    </script>
+  </body>
 
 </html>
