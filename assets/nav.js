@@ -16,19 +16,19 @@
 
 	/* slide menu left */
 	toggleSlideLeftRuby.addEventListener( "click", function(){
-		classie.add( body, "sml-open" );
+		classie.add( body, "sml-open-ruby" );
 		document.body.appendChild(mask);
-		activeNav = "sml-open";
+		activeNav = "sml-open-ruby";
 	} );
 	toggleSlideLeftPython.addEventListener( "click", function(){
-		classie.add( body, "sml-open" );
+		classie.add( body, "sml-open-python" );
 		document.body.appendChild(mask);
-		activeNav = "sml-open";
+		activeNav = "sml-open-python";
 	} );
 	toggleSlideLeftCPlusPlus.addEventListener( "click", function(){
-		classie.add( body, "sml-open" );
+		classie.add( body, "sml-open-cplusplus" );
 		document.body.appendChild(mask);
-		activeNav = "sml-open";
+		activeNav = "sml-open-cplusplus";
 	} );
 
 

@@ -1,26 +1,3 @@
-
-
-
-/* ------------------------------------------------------------ *\
-|* ------------------------------------------------------------ *|
-|* Globals
-|* ------------------------------------------------------------ *|
-\* ------------------------------------------------------------ */
-button {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
 |* Template
@@ -28,33 +5,6 @@ button {
 \* ------------------------------------------------------------ */
 body {
     overflow-x: hidden
-}
-#wrapper {
-    position: relative;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-section {
-    margin-bottom: 30px
-}
-section h1 {
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 10px;
-}
-section p {
-    margin-bottom: 30px
-}
-section p:last-child {
-    margin-bottom: 0
-}
-section:last-child {
-    margin-bottom: 0
 }
 section.toggle {
     text-align: center
@@ -73,10 +23,6 @@ section.toggle {
 |* Toggle Buttons
 |* ------------------------------------------------------------ *|
 \* ------------------------------------------------------------ */
-.buttons {
-    margin-bottom: 30px;
-    text-align: center;
-}
 .buttons button {
     display: inline-block;
     margin: 0 0 4px 0;
@@ -124,137 +70,84 @@ button.close-menu {
 button.close-menu:focus {
     outline: none
 }
+
+
+/* ###################################ruby######################################## */
+
+
 /* slide menu left and right, push menu left and right */
-nav.slide-menu-left,
-nav.slide-menu-right,
-nav.push-menu-left,
-nav.push-menu-right {
+nav.slide-menu-left-ruby,
+nav.slide-menu-right-ruby,
+nav.push-menu-left-ruby,
+nav.push-menu-right-ruby {
     top: 0;
     width: 300px;
     height: 100%;
 }
-nav.slide-menu-left li,
-nav.slide-menu-right li,
-nav.push-menu-left li,
-nav.push-menu-right li {
+nav.slide-menu-left-ruby li,
+nav.slide-menu-right-ruby li,
+nav.push-menu-left-ruby li,
+nav.push-menu-right-ruby li {
     display: block;
     text-align: center;
     border-bottom: solid 1px #3184a1;
     border-top: solid 1px #b5dbe9;
 }
-nav.slide-menu-left li:first-child,
-nav.slide-menu-right li:first-child,
-nav.push-menu-left li:first-child,
-nav.push-menu-right li:first-child {
+nav.slide-menu-left-ruby li:first-child,
+nav.slide-menu-right-ruby li:first-child,
+nav.push-menu-left-ruby li:first-child,
+nav.push-menu-right-ruby li:first-child {
     border-top: none
 }
-nav.slide-menu-left li:last-child,
-nav.slide-menu-right li:last-child,
-nav.push-menu-left li:last-child,
-nav.push-menu-right li:last-child {
+nav.slide-menu-left-ruby li:last-child,
+nav.slide-menu-right-ruby li:last-child,
+nav.push-menu-left-ruby li:last-child,
+nav.push-menu-right-ruby li:last-child {
     border-bottom: none
 }
-nav.slide-menu-left a,
-nav.slide-menu-right a,
-nav.push-menu-left a,
-nav.push-menu-right a {
+nav.slide-menu-left-ruby a,
+nav.slide-menu-right-ruby a,
+nav.push-menu-left-ruby a,
+nav.push-menu-right-ruby a {
     display: block;
     padding: 10px;
     font-size: 18px;
 }
-nav.slide-menu-left button.close-menu,
-nav.slide-menu-right button.close-menu,
-nav.push-menu-left button.close-menu,
-nav.push-menu-right button.close-menu {
+nav.slide-menu-left-ruby button.close-menu,
+nav.slide-menu-right-ruby button.close-menu,
+nav.push-menu-left-ruby button.close-menu,
+nav.push-menu-right-ruby button.close-menu {
     margin: 10px 0;
     padding: 10px 30px;
     background-color: #3184a1;
     color: #fff;
 }
-nav.slide-menu-left,
-nav.push-menu-left {
+nav.slide-menu-left-ruby,
+nav.push-menu-left-ruby {
     left: -300px
 }
-nav.slide-menu-right,
-nav.push-menu-right {
+nav.slide-menu-right-ruby,
+nav.push-menu-right-ruby {
     right: -300px
 }
-body.sml-open nav.slide-menu-left,
-body.pml-open nav.push-menu-left {
+body.sml-open-ruby nav.slide-menu-left-ruby,
+body.pml-open-ruby nav.push-menu-left-ruby {
     left: 0
 }
-body.smr-open nav.slide-menu-right,
-body.pmr-open nav.push-menu-right {
+body.smr-open-ruby nav.slide-menu-right-ruby,
+body.pmr-open-ruby nav.push-menu-right-ruby {
     right: 0
 }
-body.pml-open #wrapper {
+body.pml-open-ruby #wrapper {
     left: 300px
 }
-body.pmr-open #wrapper {
+body.pmr-open-ruby #wrapper {
     left: -300px
 }
-/* slide menu top and bottom */
-nav.slide-menu-top,
-nav.slide-menu-bottom,
-nav.push-menu-top,
-nav.push-menu-bottom {
-    left: 0;
-    width: 100%;
-    height: 100px;
-}
-nav.slide-menu-top ul,
-nav.slide-menu-bottom ul,
-nav.push-menu-top ul,
-nav.push-menu-bottom ul {
-    text-align: center;
-    padding: 25px 0 0 0;
-}
-nav.slide-menu-top li,
-nav.slide-menu-bottom li,
-nav.push-menu-top li,
-nav.push-menu-bottom li {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
-}
-nav.slide-menu-top a,
-nav.slide-menu-bottom a,
-nav.push-menu-top a,
-nav.push-menu-bottom a {
-    display: block;
-    line-height: 50px;
-    padding: 0 10px;
-    font-size: 18px;
-}
-nav.slide-menu-top button.close-menu,
-nav.slide-menu-bottom button.close-menu,
-nav.push-menu-top button.close-menu,
-nav.push-menu-bottom button.close-menu {
-    display: block;
-    line-height: 50px;
-    margin: 0;
-    padding: 0 10px;
-}
-nav.slide-menu-top,
-nav.push-menu-top {
-    top: -100px
-}
-nav.slide-menu-bottom,
-nav.push-menu-bottom {
-    bottom: -100px
-}
-body.smt-open nav.slide-menu-top,
-body.pmt-open nav.push-menu-top {
-    top: 0
-}
-body.smb-open nav.slide-menu-bottom,
-body.pmb-open nav.push-menu-bottom {
-    bottom: 0
-}
-body.pmt-open #wrapper {
+body.pmt-open-ruby #wrapper {
     top: 100px
 }
-body.pmb-open #wrapper {
+body.pmb-open-ruby #wrapper {
     top: -100px
 }
 /* ------------------------------------------------------------ *\
@@ -270,58 +163,279 @@ body.pmb-open #wrapper {
 	  	padding: 10px 20px
 	}
 }
-@media all and (max-width: 660px) { 
-	/* slide menu top and bottom */
-	nav.slide-menu-top ul,
-	nav.slide-menu-bottom ul,
-	nav.push-menu-top ul,
-	nav.push-menu-bottom ul {
-	  	padding: 35px 0 0 0
-	}
-	nav.slide-menu-top a,
-	nav.slide-menu-bottom a,
-	nav.push-menu-top a,
-	nav.push-menu-bottom a {
-	  	line-height: 30px;
-	  	padding: 0 2px;
-	  	font-size: 12px;
-	}
-	nav.slide-menu-top button.close-menu,
-	nav.slide-menu-bottom button.close-menu,
-	nav.push-menu-top button.close-menu,
-	nav.push-menu-bottom button.close-menu {
-	  	line-height: 30px;
-	  	padding: 0 2px;
-	}
-}
 @media all and (max-width: 330px) { 
-	nav.slide-menu-left,
-	nav.slide-menu-right,
-	nav.push-menu-left,
-	nav.push-menu-right {
+	nav.slide-menu-lef-ruby,
+	nav.slide-menu-right-ruby,
+	nav.push-menu-left-ruby,
+	nav.push-menu-right-ruby {
 	  	top: 0;
 	  	width: 100%;
 	}
-	nav.slide-menu-left,
-	nav.push-menu-left {
+	nav.slide-menu-left-ruby,
+	nav.push-menu-left-ruby {
 	  	left: -100%
 	}
-	nav.slide-menu-right,
-	nav.push-menu-right {
+	nav.slide-menu-right-ruby,
+	nav.push-menu-right-ruby {
 	  	right: -100%
 	}
-	body.sml-open nav.slide-menu-left,
-	body.pml-open nav.push-menu-left {
+	body.sml-open-ruby nav.slide-menu-left-ruby,
+	body.pml-open-ruby nav.push-menu-left-ruby {
 	  	left: 0
 	}
-	body.smr-open nav.slide-menu-right,
-	body.pmr-open nav.push-menu-right {
+	body.smr-open-ruby nav.slide-menu-right-ruby,
+	body.pmr-open-ruby nav.push-menu-right-ruby {
 	  	right: 0
 	}
-	body.pml-open #wrapper {
+	body.pml-open-ruby #wrapper {
 	  	left: 100%
 	}
-	body.pmr-open #wrapper {
+	body.pmr-open-ruby #wrapper {
+	  	left: -100%
+	}
+}
+
+/* ###################################python######################################## */
+
+/* slide menu left and right, push menu left and right */
+nav.slide-menu-left-python,
+nav.slide-menu-right-python,
+nav.push-menu-left-python,
+nav.push-menu-right-python {
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+nav.slide-menu-left-python li,
+nav.slide-menu-right-python li,
+nav.push-menu-left-python li,
+nav.push-menu-right-python li {
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #3184a1;
+    border-top: solid 1px #b5dbe9;
+}
+nav.slide-menu-left-python li:first-child,
+nav.slide-menu-right-python li:first-child,
+nav.push-menu-left-python li:first-child,
+nav.push-menu-right-python li:first-child {
+    border-top: none
+}
+nav.slide-menu-left-python li:last-child,
+nav.slide-menu-right-python li:last-child,
+nav.push-menu-left-python li:last-child,
+nav.push-menu-right-python li:last-child {
+    border-bottom: none
+}
+nav.slide-menu-left-python a,
+nav.slide-menu-right-python a,
+nav.push-menu-left-python a,
+nav.push-menu-right-python a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+nav.slide-menu-left-python button.close-menu,
+nav.slide-menu-right-python button.close-menu,
+nav.push-menu-left-python button.close-menu,
+nav.push-menu-right-python button.close-menu {
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: #3184a1;
+    color: #fff;
+}
+nav.slide-menu-left-python,
+nav.push-menu-left-python {
+    left: -300px
+}
+nav.slide-menu-right-python,
+nav.push-menu-right-python {
+    right: -300px
+}
+body.sml-open-python nav.slide-menu-left-python,
+body.pml-open-python nav.push-menu-left-python {
+    left: 0
+}
+body.smr-open-python nav.slide-menu-right-python,
+body.pmr-open-python nav.push-menu-right-python {
+    right: 0
+}
+body.pml-open-python #wrapper {
+    left: 300px
+}
+body.pmr-open-python #wrapper {
+    left: -300px
+}
+body.pmt-open-python #wrapper {
+    top: 100px
+}
+body.pmb-open-python #wrapper {
+    top: -100px
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media all and (max-width: 860px) { 
+	.buttons br {
+	  	display: none
+	}
+	.buttons button {
+	  	padding: 10px 20px
+	}
+}
+@media all and (max-width: 330px) { 
+	nav.slide-menu-lef-python,
+	nav.slide-menu-right-python,
+	nav.push-menu-left-python,
+	nav.push-menu-right-python {
+	  	top: 0;
+	  	width: 100%;
+	}
+	nav.slide-menu-left-python,
+	nav.push-menu-left-python {
+	  	left: -100%
+	}
+	nav.slide-menu-right-python,
+	nav.push-menu-right-python {
+	  	right: -100%
+	}
+	body.sml-open-python nav.slide-menu-left-python,
+	body.pml-open-python nav.push-menu-left-python {
+	  	left: 0
+	}
+	body.smr-open-python nav.slide-menu-right-python,
+	body.pmr-open-python nav.push-menu-right-python {
+	  	right: 0
+	}
+	body.pml-open-python #wrapper {
+	  	left: 100%
+	}
+	body.pmr-open-python #wrapper {
+	  	left: -100%
+	}
+}
+
+
+/* ###################################c++######################################## */
+
+/* slide menu left and right, push menu left and right */
+nav.slide-menu-left-cplusplus,
+nav.slide-menu-right-cplusplus,
+nav.push-menu-left-cplusplus,
+nav.push-menu-right-cplusplus {
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+nav.slide-menu-left-cplusplus li,
+nav.slide-menu-right-cplusplus li,
+nav.push-menu-left-cplusplus li,
+nav.push-menu-right-cplusplus li {
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #3184a1;
+    border-top: solid 1px #b5dbe9;
+}
+nav.slide-menu-left-cplusplus li:first-child,
+nav.slide-menu-right-cplusplus li:first-child,
+nav.push-menu-left-cplusplus li:first-child,
+nav.push-menu-right-cplusplus li:first-child {
+    border-top: none
+}
+nav.slide-menu-left-cplusplus li:last-child,
+nav.slide-menu-right-cplusplus li:last-child,
+nav.push-menu-left-cplusplus li:last-child,
+nav.push-menu-right-cplusplus li:last-child {
+    border-bottom: none
+}
+nav.slide-menu-left-cplusplus a,
+nav.slide-menu-right-cplusplus a,
+nav.push-menu-left-cplusplus a,
+nav.push-menu-right-cplusplus a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+nav.slide-menu-left-cplusplus button.close-menu,
+nav.slide-menu-right-cplusplus button.close-menu,
+nav.push-menu-left-cplusplus button.close-menu,
+nav.push-menu-right-cplusplus button.close-menu {
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: #3184a1;
+    color: #fff;
+}
+nav.slide-menu-left-cplusplus,
+nav.push-menu-left-cplusplus {
+    left: -300px
+}
+nav.slide-menu-right-cplusplus,
+nav.push-menu-right-cplusplus {
+    right: -300px
+}
+body.sml-open-cplusplus nav.slide-menu-left-cplusplus,
+body.pml-open-cplusplus nav.push-menu-left-cplusplus {
+    left: 0
+}
+body.smr-open-cplusplus nav.slide-menu-right-cplusplus,
+body.pmr-open-cplusplus nav.push-menu-right-cplusplus {
+    right: 0
+}
+body.pml-open-cplusplus #wrapper {
+    left: 300px
+}
+body.pmr-open-cplusplus #wrapper {
+    left: -300px
+}
+body.pmt-open-cplusplus #wrapper {
+    top: 100px
+}
+body.pmb-open-cplusplus #wrapper {
+    top: -100px
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media all and (max-width: 860px) { 
+	.buttons br {
+	  	display: none
+	}
+	.buttons button {
+	  	padding: 10px 20px
+	}
+}
+@media all and (max-width: 330px) { 
+	nav.slide-menu-lef-cplusplus,
+	nav.slide-menu-right-cplusplus,
+	nav.push-menu-left-cplusplus,
+	nav.push-menu-right-cplusplus {
+	  	top: 0;
+	  	width: 100%;
+	}
+	nav.slide-menu-left-cplusplus,
+	nav.push-menu-left-cplusplus {
+	  	left: -100%
+	}
+	nav.slide-menu-right-cplusplus,
+	nav.push-menu-right-cplusplus {
+	  	right: -100%
+	}
+	body.sml-open-cplusplus nav.slide-menu-left-cplusplus,
+	body.pml-open-cplusplus nav.push-menu-left-cplusplus {
+	  	left: 0
+	}
+	body.smr-open-cplusplus nav.slide-menu-right-cplusplus,
+	body.pmr-open-cplusplus nav.push-menu-right-cplusplus {
+	  	right: 0
+	}
+	body.pml-open-cplusplus #wrapper {
+	  	left: 100%
+	}
+	body.pmr-open-cplusplus #wrapper {
 	  	left: -100%
 	}
 }
