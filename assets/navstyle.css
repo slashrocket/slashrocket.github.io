@@ -1,0 +1,327 @@
+
+
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Globals
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Template
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+body {
+    overflow-x: hidden
+}
+#wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+section {
+    margin-bottom: 30px
+}
+section h1 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+}
+section p {
+    margin-bottom: 30px
+}
+section p:last-child {
+    margin-bottom: 0
+}
+section:last-child {
+    margin-bottom: 0
+}
+section.toggle {
+    text-align: center
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Toggle Buttons
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.buttons {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.buttons button {
+    display: inline-block;
+    margin: 0 0 4px 0;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #67b5d1;
+}
+.buttons button:hover,
+.buttons button.active {
+    background-color: #3184a1
+}
+.buttons button:focus {
+    outline: none
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Menus
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+/* general style for all menus */
+nav.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: #67b5d1;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.menu a {
+    font-weight: 300;
+    color: #fff;
+}
+button.close-menu {
+    background-color: #3184a1;
+    color: #fff;
+}
+button.close-menu:focus {
+    outline: none
+}
+/* slide menu left and right, push menu left and right */
+nav.slide-menu-left,
+nav.slide-menu-right,
+nav.push-menu-left,
+nav.push-menu-right {
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+nav.slide-menu-left li,
+nav.slide-menu-right li,
+nav.push-menu-left li,
+nav.push-menu-right li {
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #3184a1;
+    border-top: solid 1px #b5dbe9;
+}
+nav.slide-menu-left li:first-child,
+nav.slide-menu-right li:first-child,
+nav.push-menu-left li:first-child,
+nav.push-menu-right li:first-child {
+    border-top: none
+}
+nav.slide-menu-left li:last-child,
+nav.slide-menu-right li:last-child,
+nav.push-menu-left li:last-child,
+nav.push-menu-right li:last-child {
+    border-bottom: none
+}
+nav.slide-menu-left a,
+nav.slide-menu-right a,
+nav.push-menu-left a,
+nav.push-menu-right a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+nav.slide-menu-left button.close-menu,
+nav.slide-menu-right button.close-menu,
+nav.push-menu-left button.close-menu,
+nav.push-menu-right button.close-menu {
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: #3184a1;
+    color: #fff;
+}
+nav.slide-menu-left,
+nav.push-menu-left {
+    left: -300px
+}
+nav.slide-menu-right,
+nav.push-menu-right {
+    right: -300px
+}
+body.sml-open nav.slide-menu-left,
+body.pml-open nav.push-menu-left {
+    left: 0
+}
+body.smr-open nav.slide-menu-right,
+body.pmr-open nav.push-menu-right {
+    right: 0
+}
+body.pml-open #wrapper {
+    left: 300px
+}
+body.pmr-open #wrapper {
+    left: -300px
+}
+/* slide menu top and bottom */
+nav.slide-menu-top,
+nav.slide-menu-bottom,
+nav.push-menu-top,
+nav.push-menu-bottom {
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+nav.slide-menu-top ul,
+nav.slide-menu-bottom ul,
+nav.push-menu-top ul,
+nav.push-menu-bottom ul {
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+nav.slide-menu-top li,
+nav.slide-menu-bottom li,
+nav.push-menu-top li,
+nav.push-menu-bottom li {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+nav.slide-menu-top a,
+nav.slide-menu-bottom a,
+nav.push-menu-top a,
+nav.push-menu-bottom a {
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+nav.slide-menu-top button.close-menu,
+nav.slide-menu-bottom button.close-menu,
+nav.push-menu-top button.close-menu,
+nav.push-menu-bottom button.close-menu {
+    display: block;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 10px;
+}
+nav.slide-menu-top,
+nav.push-menu-top {
+    top: -100px
+}
+nav.slide-menu-bottom,
+nav.push-menu-bottom {
+    bottom: -100px
+}
+body.smt-open nav.slide-menu-top,
+body.pmt-open nav.push-menu-top {
+    top: 0
+}
+body.smb-open nav.slide-menu-bottom,
+body.pmb-open nav.push-menu-bottom {
+    bottom: 0
+}
+body.pmt-open #wrapper {
+    top: 100px
+}
+body.pmb-open #wrapper {
+    top: -100px
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media all and (max-width: 860px) { 
+	.buttons br {
+	  	display: none
+	}
+	.buttons button {
+	  	padding: 10px 20px
+	}
+}
+@media all and (max-width: 660px) { 
+	/* slide menu top and bottom */
+	nav.slide-menu-top ul,
+	nav.slide-menu-bottom ul,
+	nav.push-menu-top ul,
+	nav.push-menu-bottom ul {
+	  	padding: 35px 0 0 0
+	}
+	nav.slide-menu-top a,
+	nav.slide-menu-bottom a,
+	nav.push-menu-top a,
+	nav.push-menu-bottom a {
+	  	line-height: 30px;
+	  	padding: 0 2px;
+	  	font-size: 12px;
+	}
+	nav.slide-menu-top button.close-menu,
+	nav.slide-menu-bottom button.close-menu,
+	nav.push-menu-top button.close-menu,
+	nav.push-menu-bottom button.close-menu {
+	  	line-height: 30px;
+	  	padding: 0 2px;
+	}
+}
+@media all and (max-width: 330px) { 
+	nav.slide-menu-left,
+	nav.slide-menu-right,
+	nav.push-menu-left,
+	nav.push-menu-right {
+	  	top: 0;
+	  	width: 100%;
+	}
+	nav.slide-menu-left,
+	nav.push-menu-left {
+	  	left: -100%
+	}
+	nav.slide-menu-right,
+	nav.push-menu-right {
+	  	right: -100%
+	}
+	body.sml-open nav.slide-menu-left,
+	body.pml-open nav.push-menu-left {
+	  	left: 0
+	}
+	body.smr-open nav.slide-menu-right,
+	body.pmr-open nav.push-menu-right {
+	  	right: 0
+	}
+	body.pml-open #wrapper {
+	  	left: 100%
+	}
+	body.pmr-open #wrapper {
+	  	left: -100%
+	}
+}

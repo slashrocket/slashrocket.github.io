@@ -9,10 +9,48 @@
     <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/navstyle.css">
+    <script type="text/javascript" src="assets/classie.js"></script>
     <link href="assets/icon.png" rel="icon" type="image">
   </head>
 
   <body>
+  <!-- for side learning resources navs -->
+  <nav class="menu slide-menu-left-ruby slide-menu-left">
+    <ul>
+        <li><button class="close-menu">&larr; Close</button></li>
+        <li><a href="#">Rails</a></li>
+        <li><a href="#">Railscasts</a></li>
+        <li><a href="#">Railstut</a></li>
+        <li><a href="#">codecademy</a></li>
+        <li><a href="#">Other</a></li>
+    </ul>
+</nav>
+<nav class="menu slide-menu-left-python slide-menu-left">
+    <ul>
+        <li><button class="close-menu">&larr; Close</button></li>
+        <li><a href="#">Codecademy</a></li>
+        <li><a href="#">python</a></li>
+        <li><a href="#">snakes</a></li>
+        <li><a href="#">readmem</a></li>
+        <li><a href="#">github</a></li>
+    </ul>
+</nav>
+<nav class="menu slide-menu-left-cplusplus slide-menu-left">
+    <ul>
+        <li><button class="close-menu">&larr; Close</button></li>
+        <li><a href="#">visual studio</a></li>
+        <li><a href="#">guide</a></li>
+        <li><a href="#">arduino</a></li>
+        <li><a href="#">raw</a></li>
+        <li><a href="#">other</a></li>
+    </ul>
+</nav>
+
+<!-- end side resources -->
+  
+  
+  
     <div class="cover">
       <div class="navbar navbar-inverse">
         <div class="container">
@@ -117,7 +155,8 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="lead list-group">
+            <div class="lead list-group" align="center">
+            <!--
               <a href="http://javascriptweekly.com" target="_blank" class="list-group-item">JavaScript Weekly</a>
               <a href="http://html5weekly.com" target="_blank" class="list-group-item">HTML5 Weekly</a>
               <a href="http://rubyweekly.com" target="_blank" class="list-group-item">Ruby Weekly</a>
@@ -126,11 +165,17 @@
               <a href="http://www.codecademy.com" target="_blank" class="list-group-item">Codecademy</a>
               <a href="https://www.codeschool.com" target="_blank" class="list-group-item">Code School</a>
               <a href="https://teamtreehouse.com" target="_blank" class="list-group-item">Treehouse</a>
+              -->
+              <button class="list-group-item nav-toggler toggle-slide-left-ruby toggle-slide-left">Ruby</button>
+              <button class="list-group-item nav-toggler toggle-slide-left-python toggle-slide-left">Python</button>
+              <button class="list-group-item nav-toggler toggle-slide-left-cplusplus toggle-slide-left">C++</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    <script type="text/javascript" src="assets/nav.js"></script>
     <script>
       $(function() {
           $('a[href*=#]:not([href=#])').click(function() {
