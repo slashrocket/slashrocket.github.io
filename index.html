@@ -6,53 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/navstyle.css">
-    <script type="text/javascript" src="assets/classie.js"></script>
     <link href="assets/icon.png" rel="icon" type="image">
   </head>
 
   <body>
-  <!-- for side learning resources navs -->
-  <nav class="menu slide-menu-left-ruby">
-    <ul class="list-group">
-        <li class="slide-heading">Ruby</li>
-        <li class="list-group-item"><a href="#">Rails</a></li>
-        <li class="list-group-item"><a href="#">Railscasts</a></li>
-        <li class="list-group-item"><a href="#">Railstut</a></li>
-        <li class="list-group-item"><a href="#">codecademy</a></li>
-        <li class="list-group-item"><a href="#">Other</a></li>
-        <li><button class="close-menu">&larr; Close</button></li>
-    </ul>
-</nav>
-<nav class="menu slide-menu-left-python">
-    <ul class="list-group">
-        <li class="slide-heading">Python</li>
-        <li class="list-group-item"><a href="#">Codecademy</a></li>
-        <li class="list-group-item"><a href="#">python</a></li>
-        <li class="list-group-item"><a href="#">snakes</a></li>
-        <li class="list-group-item"><a href="#">readmem</a></li>
-        <li class="list-group-item"><a href="#">github</a></li>
-        <li class="list-group-item"><button class="close-menu">&larr; Close</button></li>
-    </ul>
-</nav>
-<nav class="menu slide-menu-left-cplusplus">
-    <ul class="list-group">
-        <li class="slide-heading">C++</li>
-        <li class="list-group-item"><a href="#">visual studio</a></li>
-        <li class="list-group-item"><a href="#">guide</a></li>
-        <li class="list-group-item"><a href="#">arduino</a></li>
-        <li class="list-group-item"><a href="#">raw</a></li>
-        <li class="list-group-item"><a href="#">other</a></li>
-        <li class="list-group-item"><button class="close-menu">&larr; Close</button></li>
-    </ul>
-</nav>
-<!-- end side resources -->
-  
-  
-  
     <div class="cover">
       <div class="navbar navbar-inverse">
         <div class="container">
@@ -157,57 +118,14 @@
         </div>
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <div class="lead list-group">
-            <!--
-              <a href="http://javascriptweekly.com" target="_blank" class="list-group-item">JavaScript Weekly</a>
-              <a href="http://html5weekly.com" target="_blank" class="list-group-item">HTML5 Weekly</a>
-              <a href="http://rubyweekly.com" target="_blank" class="list-group-item">Ruby Weekly</a>
-              <a href="https://www.railstutorial.org" target="_blank" class="list-group-item">Ruby on Rails Tutorial by Michael Hartl</a>
-              <a href="http://railscasts.com" target="_blank" class="list-group-item">RailsCasts - Ruby on Rails Screencasts</a>
-              <a href="http://www.codecademy.com" target="_blank" class="list-group-item">Codecademy</a>
-              <a href="https://www.codeschool.com" target="_blank" class="list-group-item">Code School</a>
-              <a href="https://teamtreehouse.com" target="_blank" class="list-group-item">Treehouse</a>
-              -->
-              <a href="#ruby" class="list-group-item nav-toggler toggle-slide-left-ruby">Ruby</a>
-              <a href="#python" class="list-group-item nav-toggler toggle-slide-left-python">Python</a>
-              <a href="#cplusplus" class="list-group-item nav-toggler toggle-slide-left-cplusplus">C++</a>
+            <div class="lead" id="list">
+              <script>$('#list').load('assets/list.html');</script>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <script type="text/javascript" src="assets/nav.js"></script>
-    <script>
-      $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            }
-          });
-        });
-    </script>
-    <script>
-      $(document).on('scroll touchmove touchend', function(e) {
-        var offTop = $(document).scrollTop();
 
-        $('#hero').find('h1').css({
-          marginTop: - (offTop * 0.2),
-          opacity: (100 - (offTop * 0.2)) / 100
-        });
-        $('#hero').find('p').css({
-          marginTop: - (offTop * 0.05),
-          opacity: (100 - (offTop * 0.2)) / 100
-        });
-      });
-    </script>
   </body>
 
 </html>
