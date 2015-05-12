@@ -1,0 +1,21 @@
+/* Place custom css here */
+
+.panel > .panel-heading {
+    color: #A52E3C;
+    font-weight: 500;
+}
+
+.panel-body {
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.list-group-item {
+    border-radius: 0px !important;
+    border: 1px solid #eee !important;
+}
+
+.panel-group > .panel {
+    margin-top: 0px !important;
+    box-shadow: none;
+}

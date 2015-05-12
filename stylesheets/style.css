@@ -6649,7 +6649,7 @@ body {
   align-items: center;
   overflow: hidden;
   position: relative;
-  min-height: 100%;
+  min-height: 88%;
 }
 .cover h1,
 .cover .h1 {
