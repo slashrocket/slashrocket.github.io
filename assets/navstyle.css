@@ -37,6 +37,27 @@ section.toggle {
 .buttons button:focus {
     outline: none
 }
+
+button.close-menu {
+    border-radius: 3px;
+    border-color: rgb(148,2,20);
+    margin: 5px 0;
+    padding: 5px 15px;
+    color: rgb(254,12,75);
+    background-color: transparent;
+    border: none;
+    margin-top: 20%;
+}
+
+.slide-heading {
+  color: #ccc;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-shadow: 0px 2px 3px #666;
+}
+
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
 |* Menus
@@ -46,13 +67,14 @@ section.toggle {
 nav.menu {
     position: fixed;
     z-index: 20;
-    background-color: #67b5d1;
+    background: url('cf.png') ;
     overflow: hidden;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    border-right: solid 1px;
 }
 nav.menu ul {
     list-style-type: none;
@@ -61,14 +83,30 @@ nav.menu ul {
 }
 nav.menu a {
     font-weight: 300;
-    color: #fff;
-}
-button.close-menu {
-    background-color: #3184a1;
-    color: #fff;
+    color: #ccc;
+    
 }
 button.close-menu:focus {
     outline: none
+}
+
+nav > .list-group > .list-group-item {
+    background-color: transparent;
+    border: none;
+}
+
+nav > .list-group > .list-group-item a:hover {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > .list-group > .list-group-item a:focus {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -90,8 +128,7 @@ nav.push-menu-left-ruby li,
 nav.push-menu-right-ruby li {
     display: block;
     text-align: center;
-    border-bottom: solid 1px #3184a1;
-    border-top: solid 1px #b5dbe9;
+    border-bottom: solid 1px rgb(254,12,75);
 }
 nav.slide-menu-left-ruby li:first-child,
 nav.slide-menu-right-ruby li:first-child,
@@ -112,15 +149,6 @@ nav.push-menu-right-ruby a {
     display: block;
     padding: 10px;
     font-size: 18px;
-}
-nav.slide-menu-left-ruby button.close-menu,
-nav.slide-menu-right-ruby button.close-menu,
-nav.push-menu-left-ruby button.close-menu,
-nav.push-menu-right-ruby button.close-menu {
-    margin: 10px 0;
-    padding: 10px 30px;
-    background-color: #3184a1;
-    color: #fff;
 }
 nav.slide-menu-left-ruby,
 nav.push-menu-left-ruby {
@@ -212,8 +240,7 @@ nav.push-menu-left-python li,
 nav.push-menu-right-python li {
     display: block;
     text-align: center;
-    border-bottom: solid 1px #3184a1;
-    border-top: solid 1px #b5dbe9;
+    border-bottom: solid 1px rgb(254,12,75);
 }
 nav.slide-menu-left-python li:first-child,
 nav.slide-menu-right-python li:first-child,
@@ -234,15 +261,6 @@ nav.push-menu-right-python a {
     display: block;
     padding: 10px;
     font-size: 18px;
-}
-nav.slide-menu-left-python button.close-menu,
-nav.slide-menu-right-python button.close-menu,
-nav.push-menu-left-python button.close-menu,
-nav.push-menu-right-python button.close-menu {
-    margin: 10px 0;
-    padding: 10px 30px;
-    background-color: #3184a1;
-    color: #fff;
 }
 nav.slide-menu-left-python,
 nav.push-menu-left-python {
@@ -335,8 +353,7 @@ nav.push-menu-left-cplusplus li,
 nav.push-menu-right-cplusplus li {
     display: block;
     text-align: center;
-    border-bottom: solid 1px #3184a1;
-    border-top: solid 1px #b5dbe9;
+    border-bottom: solid 1px rgb(254,12,75);
 }
 nav.slide-menu-left-cplusplus li:first-child,
 nav.slide-menu-right-cplusplus li:first-child,
@@ -357,15 +374,6 @@ nav.push-menu-right-cplusplus a {
     display: block;
     padding: 10px;
     font-size: 18px;
-}
-nav.slide-menu-left-cplusplus button.close-menu,
-nav.slide-menu-right-cplusplus button.close-menu,
-nav.push-menu-left-cplusplus button.close-menu,
-nav.push-menu-right-cplusplus button.close-menu {
-    margin: 10px 0;
-    padding: 10px 30px;
-    background-color: #3184a1;
-    color: #fff;
 }
 nav.slide-menu-left-cplusplus,
 nav.push-menu-left-cplusplus {
