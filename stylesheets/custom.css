@@ -19,3 +19,11 @@
     margin-top: 0px !important;
     box-shadow: none;
 }
+
+.navbar {
+    position: fixed !important;
+    border-radius: 0px !important;
+}
+
+.navbar { background-color: rgba(0,0,0,0);transition: background-color 2s ease 0s;}
+.opaque { background-color: rgba(55,55,55,0.8);transition: background-color 2s ease 0s;}
