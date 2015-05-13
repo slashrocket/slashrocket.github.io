@@ -1,7 +1,7 @@
-    function scrollme(){
-              if (this.location.pathname.replace(/^\//,'') == this.location.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    function scrollme(place){
+if (location.pathname.replace(/^\//,'') == place.pathname.replace(/^\//,'') && location.hostname == place.hostname) {
+                var target = $(place.hash);
+                target = target.length ? target : $('[name=' + place.hash.slice(1) +']');
                 if (target.length) {
                   $('html,body').animate({
                     scrollTop: target.offset().top
