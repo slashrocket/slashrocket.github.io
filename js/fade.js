@@ -9,11 +9,3 @@ $(document).on('scroll touchmove touchend', function(e) {
     opacity: (100 - (offTop * 0.2)) / 100
   });
 });
-
-$(window).scroll(function() {
-    if($(this).scrollTop() > 300) {
-        $('.navbar').addClass('opaque');
-    } else {
-        $('.navbar').removeClass('opaque');
-    }
-});
