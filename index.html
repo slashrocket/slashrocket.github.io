@@ -16,7 +16,6 @@
 
   <body>
     <div class="cover" id="top">
-      <script>$('#top').load('pages/navbar.html');</script>
     </div>
     <div class="section" id="section-slack">
       <div class="container">
@@ -40,28 +39,12 @@
       </div>
     </div>
     <div class="section" id="section-projects">
-      <script>$('#section-projects').load('pages/projects.html');</script>
     </div>
     <div class="section" id="section-resources">
-      <script>$('#section-resources').load('pages/list.html');</script>
     </div>
     <script type="text/javascript" src="js/fade.js"></script>
-    <script>
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>
+    <script type="text/javascript" src="js/load_partials.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
   </body>
 
 </html>
