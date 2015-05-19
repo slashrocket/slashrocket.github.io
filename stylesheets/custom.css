@@ -80,3 +80,7 @@
     bottom: 30px;
   }
 }
+
+h2 {
+  letter-spacing: -2px;
+}
