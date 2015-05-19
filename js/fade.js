@@ -12,7 +12,7 @@ if (location.pathname.replace(/^\//,'') == place.pathname.replace(/^\//,'') && l
             };
 $(document).on('scroll touchmove touchend', function(e) {
   var offTop = $(document).scrollTop();
-  $('#hero').find('h1').css({
+  $('#hero').find('h2').css({
     marginTop: - (offTop * 0.2),
     opacity: (100 - (offTop * 0.2)) / 100
   });
