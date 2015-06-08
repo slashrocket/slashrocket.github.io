@@ -1,56 +1,177 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <title>slashrocket</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/custom.css">
-    <link href="images/icon.png" rel="icon" type="image">
-    <script type="text/javascript">
-      (function() {
-        window.PA_SITE_ID = 2457964944098;
-        var u='//api.pleasant.io/';
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pleasant.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-  </head>
-
-  <body>
-    <div class="cover" id="top">
-    </div>
-    <div class="section" id="section-community">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center">Community</h1>
-            <p class="lead text-center">take a moment to read through our <a href="https://slashrocket.io/CodeOfConduct" target="_blank">code of conduct</a> then request an invite to Slack below or <a href="https://community.slashrocket.io" target="_blank">sign up for our forum</a>!</p>
-            <p class="text-center">
-              <script src="https://slashrocket-slackin.herokuapp.com/slackin.js?large"></script>
-            </p>
-          </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="images/slashrocketicon.png" rel="icon" type="image">
+        <script type="text/javascript">
+            (function() {
+                window.PA_SITE_ID = 2457964944098;
+                var u='//api.pleasant.io/';
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pleasant.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://slashrocket.io/"><span><img src="/images/slashrocketicon.png" height="25" width="25" alt="Slashrocket logo"></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#section-community" onclick="scrollme(this) return false;">Community</a>
+                        </li>
+                        <li>
+                            <a href="#section-projects" onclick="scrollme(this) return false;">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <hr>
-          </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12" style="height:50px;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-1">
+                        <img class="img-responsive" src="/images/slashrocket.png" alt="Slashrocket logo" style="width: 75%; height: 75%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-3">
+                        <h1 class="text-center">a friendly developer community</h1>
+                        <p class="text-center">slashrocket is a friendly, inclusive community for developers of all skill
+                            levels and disciplines.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="section" id="section-projects">
-    </div>
-    <div class="section" id="section-resources">
-    </div>
-    <a href="#0" class="cd-top">Top</a>
-    <script type="text/javascript" src="js/load_partials.js"></script>
-    <script type="text/javascript" src="js/to_top.js"></script>
-    <script type="text/javascript" src="js/fade.js"></script>
-  </body>
-
-</html>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-community">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">join our community</h1>
+                        <p class="text-center">slashrocket is a community of developers of all backgrounds. we started with a few people talking about code and have since grown to a community of over 500 members. we work together to create projects as a group, discuss development, and provide a friendly home on the web for developers. we adhere to a code of conduct so everyone feels welcome.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://slashrocket.slack.com/" target="_blank"><i class="fa fa-5x fa-fw fa-slack pull-left"></i></a>
+                        <h1 class="text-center">Slack</h1>
+                        <p class="text-center">chat with us on Slack</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://community.slashrocket.io/" target="_blank"><i class="fa fa-5x fa-fw fa-comments pull-right"></i></a>
+                        <h1 class="text-center">Discourse</h1>
+                        <p class="text-center">participate in our community forum</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            <script async="" defer="" src="https://slashrocket-slackin.herokuapp.com/slackin.js?large"></script>
+                        </p>
+                        <h3 class="text-center">take a moment to read our <a href="https://slashrocket.io/CodeOfConduct" target="_blank">code of conduct</a> and click the button to request an invite. we'd love to have you!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section-projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center">projects by the slashrocket team</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="http://redditgraphed.com/" target="_blank"><img src="/images/redditgraphed.png" class="img-responsive img-thumbnail" alt="A screen shot of the redditgraphed web site"></a>
+                            <h2 class="text-center">redditgraphed</h2>
+                            <p class="text-center">analysis of reddit posts</p>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="https://stationstream.space/" target="_blank"><img src="/images/stationstream.png" class="img-responsive img-thumbnail" alt="A screen shot of the stationstream web site"></a>
+                            <h2 class="text-center">stationstream</h2>
+                            <p class="text-center">real-time tracking of the ISS</p>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="https://github.com/slashrocket/reactif" target="_blank"><img src="/images/reactif.png" class="img-responsive img-thumbnail" alt="A screen shot of the reactif source code"></a>
+                            <h2 class="text-center">reactif</h2>
+                            <p class="text-center">better gif search for slack</p>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="https://github.com/slashrocket" target="_blank"><img src="/images/placeholder.png" class="img-responsive img-thumbnail" alt="A placeholder image"></a>
+                            <h2 class="text-center">upcoming project...</h2>
+                            <p class="text-center">help us make something great!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" style="height:50px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="section section-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>slashrocket</h1>
+                            <p>a friendly developer community</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-info text-right">
+                                <br>
+                                <br>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                                    <a href="https://slashrocket.slack.com/"><i class="fa fa-3x fa-fw fa-slack text-inverse"></i></a>
+                                    <a href="https://community.slashrocket.io/"><i class="fa fa-3x fa-fw fa-comments text-inverse"></i></a>
+                                    <a href="https://twitter.com/slashrocketio"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                    <a href="https://github.com/slashrocket"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 hidden-xs text-right">
+                                    <a href="https://slashrocket.slack.com/" target="_blank"><i class="fa fa-3x fa-fw text-inverse fa-slack"></i></a>
+                                    <a href="https://community.slashrocket.io/" target="_blank"><i class="fa fa-3x fa-fw text-inverse fa-comments"></i></a>
+                                    <a href="https://twitter.com/slashrocketio" target="_blank"><i class="fa fa-3x fa-fw text-inverse fa-twitter"></i></a>
+                                    <a href="https://github.com/slashrocket" target="_blank"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </html>

@@ -1,1 +1,1 @@
-# slashrocket.github.io
+# [slashrocket](https://slashrocket.io)
