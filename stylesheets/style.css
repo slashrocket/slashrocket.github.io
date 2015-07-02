@@ -1,0 +1,12 @@
+body {
+  background: #fafafa;
+  color: #1f1f1f;
+  font-family: "Proxima Nova", "Helvetica Neue", serif;
+  font-size: 16px;
+}
+
+#launch-rocket {
+  width: 20%;
+  display: block;
+  margin: auto;
+}
