@@ -4,10 +4,14 @@
 }
 
 body {
-  background: #fafafa;
+  background: #fefefe;
   color: #1f1f1f;
   font-family: "Proxima Nova", "Helvetica Neue", serif;
   font-size: 16px;
+}
+
+.navbar {
+  background-color: #fefefe;
 }
 
 #launch-rocket {
