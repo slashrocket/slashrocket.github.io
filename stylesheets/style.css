@@ -13,9 +13,3 @@ body {
 .navbar {
   background-color: #fefefe;
 }
-
-#launch-rocket {
-  width: 20%;
-  display: block;
-  margin: auto;
-}
